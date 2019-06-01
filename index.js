@@ -3,6 +3,7 @@ var express = require('express');
 var expressEjsLayouts = require('express-ejs-layouts');
 var request = require('request');
 
+const port = process.env.PORT || 3000
 //Declare a new express app
 var app = express();
 
@@ -14,7 +15,7 @@ app.use(expressEjsLayouts);
 
 // Define routes
 app.get('/', function(req, res){
-	const url = 'http://www.omdbapi.com?apikey=908a16f9&s=Star+Wars';
+	const url = 'http://www.omdbapi.com?apikey=908a16f9&s=Titanic';
 	request(url, (error, response, body) => {
 		if(!error && response.statusCode === 200){
 			var parsedJson = JSON.parse(body);
@@ -34,4 +35,4 @@ app.get('/about', (req, res) => {
 });
 
 // Liston on port 3000
-app.listen(3000)
+app.listen(port)

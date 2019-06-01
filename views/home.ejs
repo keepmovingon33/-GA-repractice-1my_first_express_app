@@ -5,7 +5,7 @@
 
 	<% movies.forEach(function(m){%>
 		<div>
-			<h3><%= m.Title %> (<% m.Year %>) </h3>
+			<h3><%= m.Title %> (<%= m.Year %>) </h3>
 			<img src="<%= m.Poster %>">
 		</div>
 	<% }); %>
