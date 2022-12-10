@@ -19,7 +19,7 @@
   "homepage": "https://github.com/acvan11/-GA-repractice-1my_first_express_app#readme",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.0",
     "nodemon": "^1.19.1",
     "request": "^2.88.0"
